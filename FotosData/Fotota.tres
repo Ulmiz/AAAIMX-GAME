@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FotoDato" format=3 uid="uid://de4muo36lltlx"]
+
+[ext_resource type="Texture2D" uid="uid://dnt6ed1a6astc" path="res://Assets/588483416_1397123102423380_3428471436002996602_n.jpg" id="1_kony2"]
+[ext_resource type="Script" uid="uid://b7n6xq60pebji" path="res://FotoDato.gd" id="1_v80jp"]
+
+[resource]
+script = ExtResource("1_v80jp")
+imagen = ExtResource("1_kony2")
+fecha = "2022"
+descripcion = "kpedo que loco"
+"año" = 2022
+metadata/_custom_type_script = "uid://b7n6xq60pebji"

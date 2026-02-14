@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b5j1vywrcep3x"]
+
+[ext_resource type="Texture2D" uid="uid://b5cxjfnwkhpkd" path="res://Assets/character.png" id="1_0np46"]
+[ext_resource type="Script" uid="uid://cn371mes0nklr" path="res://Scripts/player_test.gd" id="1_lwnxd"]
+[ext_resource type="Texture2D" uid="uid://csl1dhcyd7pgl" path="res://Assets/Personaje/Ojos/ojos1.png" id="3_wc8wf"]
+[ext_resource type="Texture2D" uid="uid://drvoedy05m3ek" path="res://Assets/Personaje/pantalon/pantalon2.png" id="4_pxmlw"]
+[ext_resource type="Texture2D" uid="uid://bim21d78mleu8" path="res://Assets/Personaje/camisa/camisa1.png" id="5_4y7c0"]
+[ext_resource type="Texture2D" uid="uid://b3kcva40p441e" path="res://Assets/Personaje/Pelos/pelo1.png" id="6_txb0p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwnxd"]
+size = Vector2(16, 18)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lwnxd"]
+radius = 14.142136
+
+[node name="player_test" type="CharacterBody2D" unique_id=1898129713]
+script = ExtResource("1_lwnxd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=796222893]
+position = Vector2(34, 47)
+shape = SubResource("RectangleShape2D_lwnxd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2115127982]
+visible = false
+position = Vector2(34, 47)
+texture = ExtResource("1_0np46")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1792876329]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1141728619]
+position = Vector2(34, 47)
+shape = SubResource("CircleShape2D_lwnxd")
+
+[node name="Visuals" type="Node2D" parent="." unique_id=747963082]
+position = Vector2(34, 47)
+
+[node name="SpriteCuerpo" type="Sprite2D" parent="Visuals" unique_id=337965394]
+texture = ExtResource("1_0np46")
+
+[node name="SpriteOjos" type="Sprite2D" parent="Visuals" unique_id=245838554]
+texture = ExtResource("3_wc8wf")
+
+[node name="SpritePantalon" type="Sprite2D" parent="Visuals" unique_id=791708018]
+texture = ExtResource("4_pxmlw")
+
+[node name="SpriteCamisa" type="Sprite2D" parent="Visuals" unique_id=1161093116]
+texture = ExtResource("5_4y7c0")
+
+[node name="SpritePelo" type="Sprite2D" parent="Visuals" unique_id=927000417]
+texture = ExtResource("6_txb0p")
+
+[node name="LabelNombre" type="Label" parent="Visuals" unique_id=417678572]
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 38.0
+offset_bottom = -2.0
+theme_override_font_sizes/font_size = 10
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

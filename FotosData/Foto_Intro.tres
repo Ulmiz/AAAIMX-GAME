@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FotoDato" format=3 uid="uid://dbm3but6xapk8"]
+
+[ext_resource type="Texture2D" uid="uid://baqdk1rierrgl" path="res://Assets/586422394_1393347459467611_5525084152011741420_n.jpg" id="1_42oh7"]
+[ext_resource type="Script" uid="uid://b7n6xq60pebji" path="res://FotoDato.gd" id="2_u3q3s"]
+
+[resource]
+script = ExtResource("2_u3q3s")
+imagen = ExtResource("1_42oh7")
+fecha = "12 de mayo 2022"
+descripcion = "ganaron la upi"
+"año" = 2022
+metadata/_custom_type_script = "uid://b7n6xq60pebji"

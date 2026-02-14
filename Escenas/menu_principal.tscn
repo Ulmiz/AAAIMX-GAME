@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c6a4kgmk18bf"]
+
+[ext_resource type="Script" uid="uid://b7lqyaujk807s" path="res://menu_principal.gd" id="1_xv3xs"]
+[ext_resource type="Texture2D" uid="uid://dkhij1gc1c8lg" path="res://icon.svg" id="2_ft1ng"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_041ro"]
+bg_color = Color(0.32174987, 0.1881, 0.99, 1)
+border_color = Color(0.061369136, 0.0613691, 0.061369024, 1)
+
+[node name="MenuPrincipal" type="Control" unique_id=197672635]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xv3xs")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1841899726]
+layout_mode = 0
+offset_right = 494.0
+offset_bottom = 272.0
+texture = ExtResource("2_ft1ng")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1277171415]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 54.0
+offset_right = 299.0
+offset_bottom = 190.0
+
+[node name="BotonJugar" type="Button" parent="VBoxContainer" unique_id=469927609]
+layout_mode = 2
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_041ro")
+text = "JUGAR"
+
+[node name="BotonConfig" type="Button" parent="VBoxContainer" unique_id=1170921463]
+layout_mode = 2
+text = "CONFIGURACION"
+
+[node name="BotonCreditos" type="Button" parent="VBoxContainer" unique_id=1962147749]
+layout_mode = 2
+text = "CREDITOS"
+
+[node name="BotonSalir" type="Button" parent="VBoxContainer" unique_id=1883456832]
+layout_mode = 2
+text = "SALIR"
+
+[node name="PanelCreditos" type="Panel" parent="." unique_id=1443758608]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="PanelCreditos" unique_id=385545543]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "JUAN"
+
+[node name="PanelConfig" type="Panel" parent="." unique_id=488776937]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HSlider" type="HSlider" parent="PanelConfig" unique_id=428255471]
+visible = false
+layout_mode = 0
+offset_right = 36.0
+offset_bottom = 16.0
+
+[connection signal="pressed" from="VBoxContainer/BotonJugar" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonConfig" to="." method="_on_boton_config_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonCreditos" to="." method="_on_boton_creditos_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]

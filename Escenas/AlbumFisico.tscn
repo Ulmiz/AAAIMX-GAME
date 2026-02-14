@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dgshcg12mmepq"]
+
+[ext_resource type="Texture2D" uid="uid://dkhij1gc1c8lg" path="res://icon.svg" id="1_6snn0"]
+[ext_resource type="Script" uid="uid://7ys62lad7gdj" path="res://Escenas/album_fisico.gd" id="1_ytovt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ytovt"]
+radius = 95.663315
+
+[node name="AlbumFisico" type="Area2D" unique_id=1444561101]
+script = ExtResource("1_ytovt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1528296554]
+position = Vector2(148.5, 259)
+scale = Vector2(0.1484375, 0.125)
+texture = ExtResource("1_6snn0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=497471944]
+position = Vector2(149, 259)
+scale = Vector2(0.1484375, 0.125)
+shape = SubResource("CircleShape2D_ytovt")
+
+[node name="AvisoTecla" type="Label" parent="." unique_id=813120839]
+visible = false
+offset_left = 144.0
+offset_top = 226.0
+offset_right = 170.0
+offset_bottom = 254.0
+text = "E"

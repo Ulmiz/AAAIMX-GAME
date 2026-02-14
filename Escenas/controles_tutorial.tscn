@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bq01xdtwaqsqg"]
+
+[ext_resource type="Texture2D" uid="uid://kpsnlrsa83iq" path="res://Assets/pngegg (1).png" id="1_3xrbm"]
+[ext_resource type="Script" uid="uid://dvpeg4skanx84" path="res://controles_tutorial.gd" id="1_klywi"]
+[ext_resource type="Texture2D" uid="uid://ca0tnbu32pqej" path="res://Assets/prueba.png" id="2_i0wed"]
+
+[sub_resource type="Theme" id="Theme_i0wed"]
+
+[node name="Control" type="Control" unique_id=1817199622]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_klywi")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1223513822]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -125.0
+offset_right = 656.0
+offset_bottom = 440.0
+theme = SubResource("Theme_i0wed")
+texture = ExtResource("1_3xrbm")
+
+[node name="Label" type="Label" parent="." unique_id=121553845]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 9.0
+offset_right = 367.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 40
+text = "CONTROLES"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=965340223]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 70.0
+offset_right = 253.0
+offset_bottom = 242.0
+texture = ExtResource("2_i0wed")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="." unique_id=336657463]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 247.0
+offset_right = 473.0
+offset_bottom = 270.0
+text = "YA SE QUE SE VE FEO jajajajaja lol que loco es una alpha w"
+
+[node name="Listo" type="Button" parent="." unique_id=732720912]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 212.0
+offset_right = 431.0
+offset_bottom = 244.0
+text = "listo
+"
+
+[connection signal="pressed" from="Listo" to="." method="_on_listo_pressed"]

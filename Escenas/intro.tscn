@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://cy5ug0tvpvikc"]
+
+[ext_resource type="Script" uid="uid://ek1pu8n4lwxa" path="res://intro.gd" id="1_78bx0"]
+[ext_resource type="Texture2D" uid="uid://djhj4l1wgmkme" path="res://Assets/Imagen2.png" id="2_fxjnd"]
+[ext_resource type="Texture2D" uid="uid://dp7c1fnrdf3t5" path="res://Assets/r4d3frd4 (1).png" id="3_3xamo"]
+[ext_resource type="Texture2D" uid="uid://bn7hj4skn0r5b" path="res://Assets/oc.png" id="4_a0ck7"]
+
+[sub_resource type="Animation" id="Animation_3xamo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LogoAAAIMX:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LogoDiv:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.06666667, 0.06666667, 0.06666667, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("yo:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.06666667, 0.06666667, 0.06666667, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("yo/Label:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Juanito
+productions"]
+}
+
+[sub_resource type="Animation" id="Animation_a0ck7"]
+resource_name = "intro"
+length = 6.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LogoAAAIMX:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.73333335, 1.3666667, 2.2, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0.06666667, 0.06666667, 0.06666667, 1), Color(0.23826206, 0.23826224, 0.23826218, 1), Color(0.6666667, 0.6666667, 0.6666667, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LogoDiv:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.2333333, 3.6, 4, 4.32, 4.6666665),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.07, 0.07, 0.07, 0), Color(0.41674656, 0.41674662, 0.41674644, 1), Color(0.6666667, 0.6666667, 0.6666667, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("yo:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4.9333334, 5.4, 5.766667, 6.266667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.07, 0.07, 0.07, 0), Color(0.45064825, 0.4506483, 0.45064813, 1), Color(0.6666667, 0.6666667, 0.6666667, 1), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("yo/Label:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5.366667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Juanito
+productions"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mjm7p"]
+_data = {
+&"RESET": SubResource("Animation_3xamo"),
+&"intro": SubResource("Animation_a0ck7")
+}
+
+[node name="Intro" type="Control" unique_id=1537104894]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_78bx0")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1516623230]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LogoAAAIMX" type="TextureRect" parent="." unique_id=191162428]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 484.0
+offset_bottom = 275.0
+texture = ExtResource("2_fxjnd")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2127795801]
+libraries/ = SubResource("AnimationLibrary_mjm7p")
+movie_quit_on_finish = true
+
+[node name="LogoDiv" type="TextureRect" parent="." unique_id=2038427550]
+modulate = Color(0.06666667, 0.06666667, 0.06666667, 1)
+layout_mode = 0
+offset_right = 487.0
+offset_bottom = 280.0
+texture = ExtResource("3_3xamo")
+expand_mode = 1
+
+[node name="yo" type="TextureRect" parent="." unique_id=78432739]
+modulate = Color(0.06666667, 0.06666667, 0.06666667, 1)
+layout_mode = 0
+offset_left = 128.0
+offset_top = 53.0
+offset_right = 371.0
+offset_bottom = 205.0
+texture = ExtResource("4_a0ck7")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="yo" unique_id=1761136863]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 161.0
+offset_right = 157.0
+offset_bottom = 210.0
+text = "Juanito
+productions"
