@@ -1,11 +1,38 @@
 [gd_scene format=3 uid="uid://c6a4kgmk18bf"]
 
 [ext_resource type="Script" uid="uid://b7lqyaujk807s" path="res://menu_principal.gd" id="1_xv3xs"]
-[ext_resource type="Texture2D" uid="uid://dkhij1gc1c8lg" path="res://icon.svg" id="2_ft1ng"]
+[ext_resource type="Texture2D" uid="uid://cwj3m102myr0r" path="res://Assets/metalheart_25.jpg" id="2_15krf"]
+[ext_resource type="Texture2D" uid="uid://bfhnvaxqu7ige" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_Bar07a.png" id="2_bmgc8"]
+[ext_resource type="Texture2D" uid="uid://bghgygc4y814a" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_IconPlay01a.png" id="3_yo4kt"]
+[ext_resource type="Texture2D" uid="uid://dt0iuv0761rt8" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_ButtonArrow01a.png" id="5_15krf"]
+[ext_resource type="Texture2D" uid="uid://dvpih6u87cw58" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_IconStripe01a.png" id="5_j2d8q"]
+[ext_resource type="Texture2D" uid="uid://dgkhx8krqp0rp" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_ButtonCross01a.png" id="6_j2d8q"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_041ro"]
-bg_color = Color(0.32174987, 0.1881, 0.99, 1)
-border_color = Color(0.061369136, 0.0613691, 0.061369024, 1)
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_15krf"]
+load_path = "res://.godot/imported/UI_Flat_Bar07a.png-98299a80bfc7ba63c6379018b4be3688.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_opkeq"]
+texture = SubResource("CompressedTexture2D_15krf")
+region_rect = Rect2(1.1172657, 0.9797492, 29.78258, 9.950844)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e2nb3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3jyyh"]
+texture = ExtResource("2_bmgc8")
+region_rect = Rect2(1.1172657, 0.9797492, 29.78258, 9.950844)
+modulate_color = Color(0, 0.6039216, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rpchm"]
+texture = ExtResource("2_bmgc8")
+region_rect = Rect2(1.1172657, 0.9797492, 29.78258, 9.950844)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e2nb3"]
+load_path = "res://.godot/imported/UI_Flat_Bar07a.png-98299a80bfc7ba63c6379018b4be3688.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_15krf"]
+texture = SubResource("CompressedTexture2D_e2nb3")
+region_rect = Rect2(1.1172657, 0.9797492, 29.78258, 9.950844)
+modulate_color = Color(0, 0.5372549, 1, 1)
 
 [node name="MenuPrincipal" type="Control" unique_id=197672635]
 layout_mode = 3
@@ -18,9 +45,12 @@ script = ExtResource("1_xv3xs")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1841899726]
 layout_mode = 0
-offset_right = 494.0
-offset_bottom = 272.0
-texture = ExtResource("2_ft1ng")
+offset_left = -720.0
+offset_top = -240.0
+offset_right = 507.0
+offset_bottom = 286.0
+texture = ExtResource("2_15krf")
+expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1277171415]
 layout_mode = 0
@@ -31,20 +61,28 @@ offset_bottom = 190.0
 
 [node name="BotonJugar" type="Button" parent="VBoxContainer" unique_id=469927609]
 layout_mode = 2
-theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_041ro")
+theme_override_styles/normal = SubResource("StyleBoxTexture_opkeq")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_e2nb3")
 text = "JUGAR"
+icon = ExtResource("3_yo4kt")
 
 [node name="BotonConfig" type="Button" parent="VBoxContainer" unique_id=1170921463]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_3jyyh")
 text = "CONFIGURACION"
+icon = ExtResource("5_j2d8q")
 
 [node name="BotonCreditos" type="Button" parent="VBoxContainer" unique_id=1962147749]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_rpchm")
 text = "CREDITOS"
+icon = ExtResource("5_15krf")
 
 [node name="BotonSalir" type="Button" parent="VBoxContainer" unique_id=1883456832]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_15krf")
 text = "SALIR"
+icon = ExtResource("6_j2d8q")
 
 [node name="PanelCreditos" type="Panel" parent="." unique_id=1443758608]
 visible = false

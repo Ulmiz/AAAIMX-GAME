@@ -162,9 +162,9 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="yo" unique_id=1761136863]
 layout_mode = 0
-offset_left = 63.0
-offset_top = 161.0
-offset_right = 157.0
-offset_bottom = 210.0
+offset_left = -93.0
+offset_top = 125.0
+offset_right = 60.0
+offset_bottom = 200.0
 text = "Juanito
 productions"
