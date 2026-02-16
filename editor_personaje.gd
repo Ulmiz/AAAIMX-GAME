@@ -74,16 +74,32 @@ func actualizar_personaje():
 
 # --- COLORES DE PIEL ---
 func crear_botones_color():
-	var colores = [Color.WHITE, Color.BISQUE, Color.TAN, Color.BROWN, Color("#3d2812")]
+	var colores = [Color.WHITE, Color.BISQUE, Color.TAN, Color.NAVY_BLUE, Color("#3d2812")]
 	var contenedor = $HBoxContainer/PanelIzquierdo/GridColores
 	
+	# 1. Cargamos el molde UNA sola vez (es más eficiente hacerlo fuera del bucle)
+	var molde = preload("res://Escenas/boton_color.tscn") 
+	
+	# 2. Limpiamos basura vieja
+	for hijo in contenedor.get_children():
+		hijo.queue_free()
+	
 	for col in colores:
-		var btn = Button.new()
-		btn.custom_minimum_size = Vector2(30,30)
+		
+		var btn = molde.instantiate()
+		
+		# Ahora sí, btn es un nodo real y podemos cambiar sus propiedades
+		btn.custom_minimum_size = Vector2(20, 20)
 		btn.modulate = col
+		
+		# Primero lo agregamos al árbol visual
 		contenedor.add_child(btn)
-		btn.pressed.connect(func(): color_actual = col; actualizar_personaje())
-
+		
+		# Y conectamos la señal
+		btn.pressed.connect(func(): 
+			color_actual = col
+			actualizar_personaje()
+		)
 # --- GUARDAR Y SALIR ---
 func _on_boton_jugar_pressed():
 	# Guardamos en la memoria GLOBAL

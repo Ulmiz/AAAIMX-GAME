@@ -2,10 +2,25 @@
 
 [ext_resource type="Script" uid="uid://d00ewta5aijf7" path="res://editor_personaje.gd" id="1_soyi3"]
 [ext_resource type="Texture2D" uid="uid://b5cxjfnwkhpkd" path="res://Assets/character.png" id="2_ca7ys"]
+[ext_resource type="Texture2D" uid="uid://dhu4kvmi6fn5n" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_Button01a_1.png" id="2_ceem3"]
+[ext_resource type="Texture2D" uid="uid://bfhnvaxqu7ige" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_Bar07a.png" id="3_4ppyg"]
 [ext_resource type="Texture2D" uid="uid://csl1dhcyd7pgl" path="res://Assets/Personaje/Ojos/ojos1.png" id="3_8cn47"]
 [ext_resource type="Texture2D" uid="uid://cpjvq3hikwq4n" path="res://Assets/Personaje/pantalon/pantalon1.png" id="4_bjme7"]
 [ext_resource type="Texture2D" uid="uid://yfggec5mkrlp" path="res://Assets/Personaje/camisa/camisa2.png" id="5_h85lm"]
 [ext_resource type="Texture2D" uid="uid://b3kcva40p441e" path="res://Assets/Personaje/Pelos/pelo1.png" id="6_h4hr8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0saou"]
+texture = ExtResource("2_ceem3")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ceem3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ppyg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5b34s"]
+texture = ExtResource("3_4ppyg")
 
 [node name="EditorPersonaje" type="Control" unique_id=1864893488]
 layout_mode = 3
@@ -38,11 +53,20 @@ alignment = 1
 
 [node name="InputNombre" type="LineEdit" parent="HBoxContainer/PanelIzquierdo" unique_id=70298653]
 layout_mode = 2
-placeholder_text = "\"Héroe\""
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.6)
+theme_override_styles/normal = SubResource("StyleBoxTexture_0saou")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_ceem3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4ppyg")
+placeholder_text = "\"Name\""
+alignment = 1
 
 [node name="LabelPiel" type="Label" parent="HBoxContainer/PanelIzquierdo" unique_id=1504179686]
 layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_5b34s")
 text = "\"COLOR\""
+horizontal_alignment = 1
 
 [node name="GridColores" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=289104246]
 layout_mode = 2
