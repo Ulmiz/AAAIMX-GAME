@@ -2,12 +2,14 @@
 
 [ext_resource type="Script" uid="uid://n2efers761hw" path="res://v_box_container.gd" id="1_ra7fc"]
 [ext_resource type="Texture2D" uid="uid://baqdk1rierrgl" path="res://Assets/586422394_1393347459467611_5525084152011741420_n.jpg" id="2_0rhix"]
-[ext_resource type="Texture2D" uid="uid://e2wglfg1mbbd" path="res://Assets/botonazul.png" id="3_0rhix"]
+[ext_resource type="Texture2D" uid="uid://gdda16xww73o" path="res://Tileset/recursos/Boton.png" id="3_0rhix"]
+
+[sub_resource type="Theme" id="Theme_0rhix"]
+Label/fonts/font = null
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6ugy"]
 content_margin_bottom = 10.0
 texture = ExtResource("3_0rhix")
-region_rect = Rect2(353.10373, 91.499344, 185.06229, 149.0224)
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=954596299]
 clip_contents = true
@@ -16,6 +18,8 @@ offset_left = 8.0
 offset_top = 29.0
 offset_right = 258.0
 offset_bottom = 283.0
+theme = SubResource("Theme_0rhix")
+theme_override_constants/separation = 3
 script = ExtResource("1_ra7fc")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=903102413]
@@ -32,12 +36,15 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 theme_override_styles/normal = SubResource("StyleBoxTexture_c6ugy")
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="." unique_id=928463137]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
+size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 theme_override_styles/normal = SubResource("StyleBoxTexture_c6ugy")
 horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 3
