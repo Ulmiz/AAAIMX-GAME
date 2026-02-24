@@ -1608,6 +1608,7 @@ album_ui = NodePath("../CanvasLayer/AlbumUI")
 position = Vector2(60, 180)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1136278102]
+position = Vector2(-2, 31)
 script = ExtResource("3_k1tog")
 next_scene_path = "res://Escenas/patio_test.tscn"
 

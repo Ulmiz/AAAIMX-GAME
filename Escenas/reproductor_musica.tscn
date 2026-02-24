@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bs08g6x6xxkiw"]
+
+[ext_resource type="Script" uid="uid://nfegqs42kd88" path="res://Scripts/reproductor_musica.gd" id="1_yrgql"]
+
+[node name="Reproductor_Musica" type="Node" unique_id=258453023]
+script = ExtResource("1_yrgql")

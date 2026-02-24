@@ -1,28 +1,43 @@
 [gd_scene format=3 uid="uid://dgshcg12mmepq"]
 
-[ext_resource type="Texture2D" uid="uid://dkhij1gc1c8lg" path="res://icon.svg" id="1_6snn0"]
 [ext_resource type="Script" uid="uid://7ys62lad7gdj" path="res://Escenas/album_fisico.gd" id="1_ytovt"]
+[ext_resource type="Texture2D" uid="uid://bdlc7wvbkaq57" path="res://Tileset/modern interiors/Pantalla.png" id="2_ytovt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ytovt"]
-radius = 95.663315
+radius = 61.286335
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytovt"]
+size = Vector2(130.00003, 113.6095)
 
 [node name="AlbumFisico" type="Area2D" unique_id=1444561101]
 script = ExtResource("1_ytovt")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1528296554]
-position = Vector2(148.5, 259)
-scale = Vector2(0.1484375, 0.125)
-texture = ExtResource("1_6snn0")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=497471944]
-position = Vector2(149, 259)
-scale = Vector2(0.1484375, 0.125)
+position = Vector2(157, 212)
+scale = Vector2(0.99999994, 0.84499997)
 shape = SubResource("CircleShape2D_ytovt")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=100108888]
+position = Vector2(156, 203.00003)
+scale = Vector2(1, 0.845)
+
+[node name="Pantalla" type="Sprite2D" parent="StaticBody2D" unique_id=2060034448]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_ytovt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=18056923]
+position = Vector2(3.0000153, 7.1005707)
+scale = Vector2(0.9999995, 0.99999976)
+shape = SubResource("RectangleShape2D_ytovt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1801878736]
+position = Vector2(3.0000153, 7.1005707)
+scale = Vector2(0.9999995, 0.99999976)
+shape = SubResource("RectangleShape2D_ytovt")
+
 [node name="AvisoTecla" type="Label" parent="." unique_id=813120839]
-visible = false
-offset_left = 144.0
-offset_top = 226.0
-offset_right = 170.0
-offset_bottom = 254.0
+offset_left = 147.0
+offset_top = 131.0
+offset_right = 176.0
+offset_bottom = 159.0
 text = "E"

@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cpjvq3hikwq4n" path="res://Assets/Personaje/pantalon/pantalon1.png" id="4_bjme7"]
 [ext_resource type="Texture2D" uid="uid://yfggec5mkrlp" path="res://Assets/Personaje/camisa/camisa2.png" id="5_h85lm"]
 [ext_resource type="Texture2D" uid="uid://b3kcva40p441e" path="res://Assets/Personaje/Pelos/pelo1.png" id="6_h4hr8"]
+[ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="9_0saou"]
+[ext_resource type="AudioStream" uid="uid://gnh7swm8jcf4" path="res://Assets/Audio/Sonic 3 Music Competition Select - sonicKAI.mp3" id="10_5b34s"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0saou"]
 texture = ExtResource("2_ceem3")
@@ -162,6 +164,9 @@ layout_mode = 2
 texture = ExtResource("6_h4hr8")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("9_0saou")]
+cancion_para_esta_escena = ExtResource("10_5b34s")
 
 [connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPelo/pelo Izquierda (<)" to="." method="cambiar_pelo" binds= [-1]]
 [connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPelo/Pelo Derecha (>)" to="." method="cambiar_pelo" binds= [1]]

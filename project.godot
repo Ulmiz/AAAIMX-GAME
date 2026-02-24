@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*uid://bc6yeghly55je"
 DialogueManager="*uid://c3rodes2l3gxb"
+GestorMusica="*uid://ejek8h62u567"
 
 [dialogue_manager]
 

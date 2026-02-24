@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr4cpfp5jyj68"
+path="res://.godot/imported/Cowboy Bebop OST 3 Blue - Autumn in Ganymede - videgenial2.mp3-ad78b4e321f6992c50cd5e4cd2638ad9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Cowboy Bebop OST 3 Blue - Autumn in Ganymede - videgenial2.mp3"
+dest_files=["res://.godot/imported/Cowboy Bebop OST 3 Blue - Autumn in Ganymede - videgenial2.mp3-ad78b4e321f6992c50cd5e4cd2638ad9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
