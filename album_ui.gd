@@ -9,7 +9,7 @@ extends Control
 @onready var fondo_final = $Background
 @onready var vbox_container = $"FiltroAños"
 @onready var carga = $Ubuntu/AnimatedSprite2D
-var foto_escena = preload("res://Escenas/FotoItem.tscn") 
+var foto_escena = preload("res://Escenas/Album/FotoItem.tscn") 
 
 func _ready():
 	# Conectar la señal de cambio de visibilidad

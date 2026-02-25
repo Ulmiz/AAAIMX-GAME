@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://bnjnxkdfnkc7h"]
+
+[ext_resource type="Script" uid="uid://d00ewta5aijf7" path="res://editor_personaje.gd" id="1_soyi3"]
+[ext_resource type="Texture2D" uid="uid://b5cxjfnwkhpkd" path="res://Assets/character.png" id="2_ca7ys"]
+[ext_resource type="Texture2D" uid="uid://dhu4kvmi6fn5n" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_Button01a_1.png" id="2_ceem3"]
+[ext_resource type="Texture2D" uid="uid://bfhnvaxqu7ige" path="res://Assets/01_Flat_Theme/Sprites/UI_Flat_Bar07a.png" id="3_4ppyg"]
+[ext_resource type="Texture2D" uid="uid://csl1dhcyd7pgl" path="res://Assets/Personaje/Ojos/ojos1.png" id="3_8cn47"]
+[ext_resource type="Texture2D" uid="uid://cpjvq3hikwq4n" path="res://Assets/Personaje/pantalon/pantalon1.png" id="4_bjme7"]
+[ext_resource type="Texture2D" uid="uid://yfggec5mkrlp" path="res://Assets/Personaje/camisa/camisa2.png" id="5_h85lm"]
+[ext_resource type="Texture2D" uid="uid://b3kcva40p441e" path="res://Assets/Personaje/Pelos/pelo1.png" id="6_h4hr8"]
+[ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="9_0saou"]
+[ext_resource type="AudioStream" uid="uid://gnh7swm8jcf4" path="res://Assets/Audio/Sonic 3 Music Competition Select - sonicKAI.mp3" id="10_5b34s"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0saou"]
+texture = ExtResource("2_ceem3")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ceem3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ppyg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5b34s"]
+texture = ExtResource("3_4ppyg")
+
+[node name="EditorPersonaje" type="Control" unique_id=1864893488]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_soyi3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1371718908]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -15.0
+offset_right = 486.0
+offset_bottom = 277.0
+color = Color(0.64585435, 0.85004634, 0.9580383, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1992733026]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 274.0
+offset_bottom = 238.0
+
+[node name="PanelIzquierdo" type="VBoxContainer" parent="HBoxContainer" unique_id=724630647]
+layout_mode = 2
+size_flags_horizontal = 6
+alignment = 1
+
+[node name="InputNombre" type="LineEdit" parent="HBoxContainer/PanelIzquierdo" unique_id=70298653]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.6)
+theme_override_styles/normal = SubResource("StyleBoxTexture_0saou")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_ceem3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4ppyg")
+placeholder_text = "\"Name\""
+alignment = 1
+
+[node name="LabelPiel" type="Label" parent="HBoxContainer/PanelIzquierdo" unique_id=1504179686]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_5b34s")
+text = "\"COLOR\""
+horizontal_alignment = 1
+
+[node name="GridColores" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=289104246]
+layout_mode = 2
+
+[node name="SelectorPelo" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=238635125]
+layout_mode = 2
+
+[node name="pelo Izquierda (<)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorPelo" unique_id=1393683943]
+layout_mode = 2
+text = "<"
+
+[node name="Pelo Derecha (>)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorPelo" unique_id=1653892758]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorOjos" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=547713292]
+layout_mode = 2
+
+[node name="Ojo Izquierda (<)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorOjos" unique_id=2005217571]
+layout_mode = 2
+text = "<"
+
+[node name="Ojo Derecha (>)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorOjos" unique_id=980468953]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorCamisa" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=80182863]
+layout_mode = 2
+
+[node name="Camisa Izquierda (<)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorCamisa" unique_id=1396549280]
+layout_mode = 2
+text = "<"
+
+[node name="Camisa Derecha (>)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorCamisa" unique_id=296347720]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorPantalon" type="HBoxContainer" parent="HBoxContainer/PanelIzquierdo" unique_id=1440323038]
+layout_mode = 2
+
+[node name="Pantalon Izquierda (<)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorPantalon" unique_id=713617786]
+layout_mode = 2
+text = "<"
+
+[node name="Pantalon Derecha (>)" type="Button" parent="HBoxContainer/PanelIzquierdo/SelectorPantalon" unique_id=1936280271]
+layout_mode = 2
+text = ">"
+
+[node name="BotonJugar" type="Button" parent="HBoxContainer/PanelIzquierdo" unique_id=1082145043]
+layout_mode = 2
+text = "¡LISTO!"
+
+[node name="PanelDerecho" type="CenterContainer" parent="HBoxContainer" unique_id=231961061]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="Muñeco" type="Control" parent="HBoxContainer/PanelDerecho" unique_id=197407390]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="Cuerpo" type="TextureRect" parent="HBoxContainer/PanelDerecho" unique_id=1573856741]
+clip_contents = true
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("2_ca7ys")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="OjosA" type="TextureRect" parent="HBoxContainer/PanelDerecho" unique_id=112206187]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("3_8cn47")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pantalon" type="TextureRect" parent="HBoxContainer/PanelDerecho" unique_id=593028928]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("4_bjme7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Camisa" type="TextureRect" parent="HBoxContainer/PanelDerecho" unique_id=1427664347]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("5_h85lm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pelo" type="TextureRect" parent="HBoxContainer/PanelDerecho" unique_id=199936357]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("6_h4hr8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("9_0saou")]
+cancion_para_esta_escena = ExtResource("10_5b34s")
+
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPelo/pelo Izquierda (<)" to="." method="cambiar_pelo" binds= [-1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPelo/Pelo Derecha (>)" to="." method="cambiar_pelo" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorOjos/Ojo Izquierda (<)" to="." method="cambiar_ojos" binds= [-1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorOjos/Ojo Derecha (>)" to="." method="cambiar_ojos" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorCamisa/Camisa Izquierda (<)" to="." method="cambiar_camisa" binds= [-1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorCamisa/Camisa Derecha (>)" to="." method="cambiar_camisa" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPantalon/Pantalon Izquierda (<)" to="." method="cambiar_pantalon" binds= [-1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/SelectorPantalon/Pantalon Derecha (>)" to="." method="cambiar_pantalon" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/PanelIzquierdo/BotonJugar" to="." method="_on_boton_jugar_pressed"]

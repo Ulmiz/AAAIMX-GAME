@@ -1,0 +1,339 @@
+[gd_scene format=3 uid="uid://dp2jguy5qg1k2"]
+
+[ext_resource type="Script" uid="uid://b1cddwgeq7tfw" path="res://album_ui.gd" id="1_wr1d6"]
+[ext_resource type="Script" uid="uid://b7n6xq60pebji" path="res://FotoDato.gd" id="2_3bwb3"]
+[ext_resource type="Texture2D" uid="uid://6f1iaha3elb5" path="res://Assets/597661751_1408706151265075_6701314699257725582_n.jpg" id="3_3bwb3"]
+[ext_resource type="Texture2D" uid="uid://dnt6ed1a6astc" path="res://Assets/588483416_1397123102423380_3428471436002996602_n.jpg" id="4_18tcg"]
+[ext_resource type="Texture2D" uid="uid://dur23eda5i0od" path="res://Assets/pacman2lugar.jpg" id="5_18tcg"]
+[ext_resource type="Texture2D" uid="uid://baqdk1rierrgl" path="res://Assets/586422394_1393347459467611_5525084152011741420_n.jpg" id="6_650mo"]
+[ext_resource type="Texture2D" uid="uid://e2wglfg1mbbd" path="res://Assets/botonazul.png" id="7_18tcg"]
+[ext_resource type="Texture2D" uid="uid://sdnliv8m2130" path="res://Tileset/recursos/bg.png" id="7_ovy4p"]
+[ext_resource type="Texture2D" uid="uid://ck31n5krq5rmf" path="res://Tileset/recursos/Lobby2.png" id="8_dvjf1"]
+[ext_resource type="Texture2D" uid="uid://fef675xr0eix" path="res://Tileset/recursos/carga de pantalla-Sheet.png" id="9_4ke8w"]
+[ext_resource type="Texture2D" uid="uid://gdda16xww73o" path="res://Tileset/recursos/Boton.png" id="10_ovy4p"]
+
+[sub_resource type="Resource" id="Resource_650mo"]
+script = ExtResource("2_3bwb3")
+imagen = ExtResource("3_3bwb3")
+fecha = "29 de febrero 2025"
+descripcion = "Cumple años angel woo waa feliz cumple años ola ola ola ola ola ola"
+"año" = 2022
+metadata/_custom_type_script = "uid://b7n6xq60pebji"
+
+[sub_resource type="Resource" id="Resource_dvjf1"]
+script = ExtResource("2_3bwb3")
+imagen = ExtResource("4_18tcg")
+fecha = "12 de mayo 2023"
+descripcion = "k loco wow "
+"año" = 2022
+metadata/_custom_type_script = "uid://b7n6xq60pebji"
+
+[sub_resource type="Resource" id="Resource_ovy4p"]
+script = ExtResource("2_3bwb3")
+imagen = ExtResource("5_18tcg")
+fecha = " 30 de enero de 2026"
+descripcion = "Alejandro Daniel Espinosa Chim, obtuvo el 2.º lugar general en la 6ª Competición Internacional de Comportamientos Inteligentes: MsPacMan vs Ghosts"
+"año" = 2026
+metadata/_custom_type_script = "uid://b7n6xq60pebji"
+
+[sub_resource type="Resource" id="Resource_4ke8w"]
+script = ExtResource("2_3bwb3")
+imagen = ExtResource("6_650mo")
+fecha = "20 de noviembre del 2025"
+descripcion = "El equipo ALPHA, ganadores del Hackathon Build The Future creando un sistema capaz de estimar la ubicación del sargazo y predecir el crecimiento de su biomasa"
+"año" = 2025
+metadata/_custom_type_script = "uid://b7n6xq60pebji"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhhdy"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iinty"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srtbe"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndaau"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eta8k"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50587"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inwln"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tqbf"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75whp"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjqj1"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5wm2"]
+atlas = ExtResource("9_4ke8w")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_68jlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhhdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iinty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srtbe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndaau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eta8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50587")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inwln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tqbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75whp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjqj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5wm2")
+}],
+"loop": false,
+"name": &"carga",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_650mo"]
+texture = ExtResource("7_18tcg")
+region_rect = Rect2(5.546753, 36.29471, 901.99554, 273.52222)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dvjf1"]
+texture = ExtResource("7_18tcg")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_650mo"]
+bg_color = Color(0.2901961, 0.5882353, 0.85882354, 0.52156866)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ovy4p"]
+texture = ExtResource("7_18tcg")
+region_rect = Rect2(11.205444, 27.818481, 894.13464, 277.29492)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_18tcg"]
+bg_color = Color(0.7764706, 0.043137256, 0.2784314, 1)
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 60
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvjf1"]
+bg_color = Color(0.8235294, 0.49803922, 0.14509805, 0.56078434)
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 60
+
+[node name="AlbumUI" type="Control" unique_id=1405177821]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wr1d6")
+todas_las_fotos = Array[ExtResource("2_3bwb3")]([SubResource("Resource_650mo"), SubResource("Resource_dvjf1"), SubResource("Resource_ovy4p"), SubResource("Resource_4ke8w")])
+
+[node name="Background" type="TextureRect" parent="." unique_id=1889817529]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 493.0
+offset_bottom = 285.0
+texture = ExtResource("7_ovy4p")
+expand_mode = 1
+
+[node name="Ubuntu" type="TextureRect" parent="." unique_id=1939118654]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_dvjf1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ubuntu" unique_id=1060368601]
+position = Vector2(241, 144)
+sprite_frames = SubResource("SpriteFrames_68jlf")
+animation = &"carga"
+
+[node name="FiltroAños" type="VBoxContainer" parent="." unique_id=1657263805]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 75.0
+offset_right = 80.0
+offset_bottom = 226.0
+theme_override_constants/separation = 9
+alignment = 1
+
+[node name="Button" type="Button" parent="FiltroAños" unique_id=1184284156]
+z_index = 1
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_650mo")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_dvjf1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_650mo")
+text = "2022"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="FiltroAños/Button" unique_id=842083497]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_ovy4p")
+
+[node name="Button2" type="Button" parent="FiltroAños" unique_id=185309817]
+z_index = 1
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ovy4p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_650mo")
+text = "2023"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="FiltroAños/Button2" unique_id=1616678015]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_ovy4p")
+
+[node name="Button3" type="Button" parent="FiltroAños" unique_id=1954382744]
+z_index = 1
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ovy4p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_650mo")
+text = "2024"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="FiltroAños/Button3" unique_id=957428547]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_ovy4p")
+
+[node name="Button4" type="Button" parent="FiltroAños" unique_id=538148362]
+z_index = 1
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ovy4p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_650mo")
+text = "2025"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="FiltroAños/Button4" unique_id=897237186]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_ovy4p")
+
+[node name="Button5" type="Button" parent="FiltroAños" unique_id=2115173492]
+z_index = 1
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ovy4p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_650mo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_650mo")
+text = "2026"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="FiltroAños/Button5" unique_id=129035290]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_ovy4p")
+
+[node name="ContenedorFotos" type="ScrollContainer" parent="." unique_id=215265323]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 46.0
+offset_right = 450.0
+offset_bottom = 231.0
+
+[node name="GridContainer" type="GridContainer" parent="ContenedorFotos" unique_id=1941003489]
+layout_mode = 2
+columns = 3
+
+[node name="cerrar" type="Button" parent="." unique_id=1429452255]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 1.0
+offset_right = 479.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.99224013, 0.94175255, 0.9747545, 1)
+theme_override_colors/font_disabled_color = Color(0.83295405, 2.4546682e-06, 3.85046e-07, 0.5019608)
+theme_override_styles/normal = SubResource("StyleBoxFlat_18tcg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dvjf1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dvjf1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_dvjf1")
+text = "  x"
+
+[connection signal="pressed" from="FiltroAños/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="FiltroAños/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="FiltroAños/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="FiltroAños/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="FiltroAños/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="cerrar" to="." method="_on_cerrar_pressed"]

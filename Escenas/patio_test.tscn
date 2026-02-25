@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://4kvhi84davga"]
 
 [ext_resource type="Texture2D" uid="uid://cg1cplw4hhju3" path="res://Tileset/japanese-school_8x8-final.tileset.png" id="1_ojy8g"]
-[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/player_test.tscn" id="2_i5n7i"]
-[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/area_2d.gd" id="3_mkuj6"]
-[ext_resource type="PackedScene" uid="uid://oc46pm0g6tf8" path="res://Escenas/Menu_pausa.tscn" id="4_hros2"]
+[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/PJ´s/player_test.tscn" id="2_i5n7i"]
+[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/F_puerta.gd" id="3_mkuj6"]
+[ext_resource type="PackedScene" uid="uid://oc46pm0g6tf8" path="res://Escenas/Menus/Menu_pausa.tscn" id="4_hros2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i5n7i"]
 texture = ExtResource("1_ojy8g")

@@ -78,7 +78,7 @@ func crear_botones_color():
 	var contenedor = $HBoxContainer/PanelIzquierdo/GridColores
 	
 	# 1. Cargamos el molde UNA sola vez (es más eficiente hacerlo fuera del bucle)
-	var molde = preload("res://Escenas/boton_color.tscn") 
+	var molde = preload("res://Escenas/Menus/boton_color.tscn") 
 	
 	# 2. Limpiamos basura vieja
 	for hijo in contenedor.get_children():
@@ -113,4 +113,4 @@ func _on_boton_jugar_pressed():
 	Global.idx_pantalon = i_pantalon
 	
 	# Vamos al juego
-	get_tree().change_scene_to_file("res://Escenas/controles_tutorial.tscn")
+	get_tree().change_scene_to_file("res://Escenas/Menus/controles_tutorial.tscn")
