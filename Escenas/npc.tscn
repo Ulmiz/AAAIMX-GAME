@@ -16,10 +16,12 @@ dialogue_resource = ExtResource("2_7qj7g")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1683730457]
 position = Vector2(27, 24)
+scale = Vector2(2, 2)
 texture = ExtResource("2_gvjmg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=232803388]
 position = Vector2(27, 24)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e6an2")
 
 [node name="label_aviso" type="Label" parent="." unique_id=923268947]
@@ -28,10 +30,12 @@ offset_top = -7.0
 offset_right = 63.0
 offset_bottom = 16.0
 text = "E"
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1398561164]
 disable_mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1535159699]
 position = Vector2(27, 24)
+scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_gvjmg")

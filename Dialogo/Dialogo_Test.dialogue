@@ -1,9 +1,9 @@
 ~ start
-Npc 1: Hola me gusta el [wave]capitulo[/wave]
-Npc 2: Hola vete [wait=1] alv 
-Npc 1: Apoco si muy vrga
+player: Hola me gusta el [wave]capitulo[/wave]
+Agente 01: [wave]Hola bienvenido[/wave]
+Agente 01: Te gustaria saber que significa AAAIMX
 - si
-	Npc 1 : asi es como la ves
+	Agente 01: AAAIMX significa Asociación por el Avance de la Inteligencia Artificial en México...
+	Agente 01: ...por sus siglas adaptadas del inglés, Association for the Advancement of Artificial Intelligence Student Chapter Mexico.
 - no
-	Npc 1: No es cierto es coto w
-	
+	Agente 01: Bueno aqui estare por si quieres saber (jeje)

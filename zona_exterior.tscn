@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://oc46pm0g6tf8" path="res://Escenas/Menu_pausa.tscn" id="5_gx02n"]
 [ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="7_6272g"]
 [ext_resource type="AudioStream" uid="uid://cex2k8rjomv6s" path="res://Assets/Audio/Hylics 2 OST   Xeno Arcadia - Mason Lindroth.mp3" id="8_tufre"]
+[ext_resource type="PackedScene" uid="uid://dgs5ncvc5hfea" path="res://Escenas/npc.tscn" id="9_tufre"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uplfw"]
 load_path = "res://.godot/imported/Room_Builder_personalizado_32x32.png-9fa909f62afee5fda11765be5018ba44.ctex"
@@ -5043,6 +5044,9 @@ shape = SubResource("RectangleShape2D_6272g")
 
 [node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("7_6272g")]
 cancion_para_esta_escena = ExtResource("8_tufre")
+
+[node name="Npc" parent="." unique_id=125718690 instance=ExtResource("9_tufre")]
+position = Vector2(89, 106)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
