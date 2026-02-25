@@ -10,6 +10,10 @@ Label/fonts/font = null
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6ugy"]
 content_margin_bottom = 10.0
 texture = ExtResource("3_0rhix")
+texture_margin_left = 7.0
+texture_margin_top = 9.0
+texture_margin_right = 7.0
+texture_margin_bottom = 5.0
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=954596299]
 clip_contents = true
@@ -33,7 +37,6 @@ expand_mode = 1
 [node name="Label" type="Label" parent="." unique_id=1818063648]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 10
 theme_override_styles/normal = SubResource("StyleBoxTexture_c6ugy")
 horizontal_alignment = 1
 vertical_alignment = 1

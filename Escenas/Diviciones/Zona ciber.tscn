@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://bhmkuaj2xw25l"]
 
-[ext_resource type="Texture2D" uid="uid://n7kvtcdlhvi1" path="res://Tileset/modern interiors/Interiors_personalizado_32x32.png" id="1_ru0m3"]
-[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/player_test.tscn" id="2_e16hr"]
-[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/area_2d.gd" id="3_vlc7e"]
-[ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="4_5mahr"]
-[ext_resource type="AudioStream" uid="uid://dr4cpfp5jyj68" path="res://Assets/Audio/Cowboy Bebop OST 3 Blue - Autumn in Ganymede - videgenial2.mp3" id="5_p6hcl"]
+[ext_resource type="Texture2D" uid="uid://n7kvtcdlhvi1" path="res://Tileset/modern interiors/Interiors_personalizado_32x32.png" id="1_lty87"]
+[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/PJ´s/player_test.tscn" id="2_7r0au"]
+[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/F_puerta.gd" id="3_swhaf"]
+[ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="4_h3n1e"]
+[ext_resource type="AudioStream" uid="uid://dr4cpfp5jyj68" path="res://Assets/Audio/Cowboy Bebop OST 3 Blue - Autumn in Ganymede - videgenial2.mp3" id="5_yrdal"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uplfw"]
 load_path = "res://.godot/imported/Room_Builder_personalizado_32x32.png-9fa909f62afee5fda11765be5018ba44.ctex"
@@ -1048,7 +1048,7 @@ sources/0 = SubResource("TileSetAtlasSource_e16hr")
 size = Vector2(20, 291)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8wlt"]
-size = Vector2(162.5, 14)
+size = Vector2(234.5, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5mahr"]
 size = Vector2(488, 65)
@@ -1057,7 +1057,7 @@ size = Vector2(488, 65)
 size = Vector2(266.5, 14)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q8wlt"]
-texture = ExtResource("1_ru0m3")
+texture = ExtResource("1_lty87")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -4884,7 +4884,7 @@ size = Vector2(218.5, 63)
 size = Vector2(49.875, 70)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ru0m3"]
-texture = ExtResource("1_ru0m3")
+texture = ExtResource("1_lty87")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -8722,7 +8722,7 @@ position = Vector2(488, 95)
 shape = SubResource("RectangleShape2D_vlc7e")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMap/CasaInteror/StaticBody2D" unique_id=212513722]
-position = Vector2(67.75, 233)
+position = Vector2(103.75, 233)
 shape = SubResource("RectangleShape2D_q8wlt")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMap/CasaInteror/StaticBody2D" unique_id=1974443066]
@@ -8775,19 +8775,19 @@ tile_set = SubResource("TileSet_e16hr")
 position = Vector2(399.03125, 250)
 shape = SubResource("RectangleShape2D_6bj7d")
 
-[node name="player_test" parent="." unique_id=1898129713 instance=ExtResource("2_e16hr")]
-position = Vector2(154, 195)
+[node name="player_test" parent="." unique_id=1898129713 instance=ExtResource("2_7r0au")]
+position = Vector2(216, 217)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1752942623]
 position = Vector2(152, 74)
-script = ExtResource("3_vlc7e")
-next_scene_path = "res://zona_exterior.tscn"
+script = ExtResource("3_swhaf")
+next_scene_path = "res://Escenas/zona_exterior.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1200847608]
-position = Vector2(32, 228)
+position = Vector2(33, 215)
 shape = SubResource("RectangleShape2D_g6py4")
 
-[node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("4_5mahr")]
-cancion_para_esta_escena = ExtResource("5_p6hcl")
+[node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("4_h3n1e")]
+cancion_para_esta_escena = ExtResource("5_yrdal")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

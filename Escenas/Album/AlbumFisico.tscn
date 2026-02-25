@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dgshcg12mmepq"]
 
-[ext_resource type="Script" uid="uid://7ys62lad7gdj" path="res://Escenas/album_fisico.gd" id="1_ytovt"]
+[ext_resource type="Script" uid="uid://7ys62lad7gdj" path="res://Scripts/album_fisico.gd" id="1_ytovt"]
 [ext_resource type="Texture2D" uid="uid://bdlc7wvbkaq57" path="res://Tileset/modern interiors/Pantalla.png" id="2_ytovt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ytovt"]

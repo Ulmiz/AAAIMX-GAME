@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://j3dvvy2eh227"]
 
 [ext_resource type="Texture2D" uid="uid://cf4wgkh70u7mf" path="res://Tileset/recursos/Idle (32x32).png" id="1_eqsts"]
-[ext_resource type="Script" uid="uid://mpdieclqj2ur" path="res://Escenas/random.gd" id="1_jobri"]
+[ext_resource type="Script" uid="uid://mpdieclqj2ur" path="res://Scripts/random.gd" id="1_jobri"]
 [ext_resource type="Texture2D" uid="uid://b66mj04tbckdi" path="res://Tileset/recursos/Run (32x32).png" id="3_et3pi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jobri"]

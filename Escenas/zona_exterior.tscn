@@ -1,14 +1,14 @@
 [gd_scene format=4 uid="uid://ciskv18vaxehg"]
 
 [ext_resource type="Texture2D" uid="uid://n7kvtcdlhvi1" path="res://Tileset/modern interiors/Interiors_personalizado_32x32.png" id="1_i21f7"]
-[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/area_2d.gd" id="2_gx02n"]
-[ext_resource type="PackedScene" uid="uid://dgshcg12mmepq" path="res://Escenas/AlbumFisico.tscn" id="3_3ma2c"]
-[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/player_test.tscn" id="3_i21f7"]
-[ext_resource type="PackedScene" uid="uid://dp2jguy5qg1k2" path="res://Escenas/album_ui.tscn" id="4_n8t8d"]
-[ext_resource type="PackedScene" uid="uid://oc46pm0g6tf8" path="res://Escenas/Menu_pausa.tscn" id="5_gx02n"]
+[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/F_puerta.gd" id="2_gx02n"]
+[ext_resource type="PackedScene" uid="uid://dgshcg12mmepq" path="res://Escenas/Album/AlbumFisico.tscn" id="3_3ma2c"]
+[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/PJ´s/player_test.tscn" id="3_i21f7"]
+[ext_resource type="PackedScene" uid="uid://dp2jguy5qg1k2" path="res://Escenas/Album/album_ui.tscn" id="4_n8t8d"]
+[ext_resource type="PackedScene" uid="uid://oc46pm0g6tf8" path="res://Escenas/Menus/Menu_pausa.tscn" id="5_gx02n"]
 [ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="7_6272g"]
 [ext_resource type="AudioStream" uid="uid://cex2k8rjomv6s" path="res://Assets/Audio/Hylics 2 OST   Xeno Arcadia - Mason Lindroth.mp3" id="8_tufre"]
-[ext_resource type="PackedScene" uid="uid://dgs5ncvc5hfea" path="res://Escenas/npc.tscn" id="9_tufre"]
+[ext_resource type="PackedScene" uid="uid://dgs5ncvc5hfea" path="res://Escenas/PJ´s/npc.tscn" id="9_tufre"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uplfw"]
 load_path = "res://.godot/imported/Room_Builder_personalizado_32x32.png-9fa909f62afee5fda11765be5018ba44.ctex"
@@ -5012,9 +5012,9 @@ tile_set = SubResource("TileSet_8dle4")
 [node name="Area2D" type="Area2D" parent="." unique_id=1089579746]
 position = Vector2(152, 74)
 script = ExtResource("2_gx02n")
-next_scene_path = "res://Escenas/Software.tscn"
+next_scene_path = "res://Escenas/Diviciones/Software.tscn"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1675176535]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P_Soft" unique_id=1675176535]
 position = Vector2(-97.875, -49.5)
 shape = SubResource("RectangleShape2D_6272g")
 
@@ -5033,12 +5033,12 @@ visible = false
 [node name="MenuPausa" parent="." unique_id=136995555 instance=ExtResource("5_gx02n")]
 visible = false
 
-[node name="Area2D2" type="Area2D" parent="." unique_id=643310349]
+[node name="P_Ciber" type="Area2D" parent="." unique_id=643310349]
 position = Vector2(152, 74)
 script = ExtResource("2_gx02n")
-next_scene_path = "res://Zona ciber.tscn"
+next_scene_path = "res://Escenas/Diviciones/Zona ciber.tscn"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1282804816]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P_Ciber" unique_id=1282804816]
 position = Vector2(191, -52)
 shape = SubResource("RectangleShape2D_6272g")
 
@@ -5048,5 +5048,25 @@ cancion_para_esta_escena = ExtResource("8_tufre")
 [node name="Npc" parent="." unique_id=125718690 instance=ExtResource("9_tufre")]
 position = Vector2(89, 106)
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[node name="P_ Robotica" type="Area2D" parent="." unique_id=1035049398]
+position = Vector2(150, 24)
+script = ExtResource("2_gx02n")
+next_scene_path = "res://Escenas/Diviciones/ROBOTICA.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P_ Robotica" unique_id=1953722145]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_6272g")
+
+[node name="P_IA" type="Area2D" parent="." unique_id=944398649]
+position = Vector2(248, 24)
+script = ExtResource("2_gx02n")
+next_scene_path = "res://Escenas/Diviciones/IA sala.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P_IA" unique_id=1316932958]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_6272g")
+
+[connection signal="body_entered" from="P_Soft" to="P_Soft" method="_on_body_entered"]
+[connection signal="body_entered" from="P_Ciber" to="P_Ciber" method="_on_body_entered"]
+[connection signal="body_entered" from="P_ Robotica" to="P_ Robotica" method="_on_body_entered"]
+[connection signal="body_entered" from="P_IA" to="P_IA" method="_on_body_entered"]

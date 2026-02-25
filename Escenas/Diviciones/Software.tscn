@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cxab76ht1p5ib" path="res://Tileset/modern interiors/Room_Builder_personalizado_32x32.png" id="1_ur7ix"]
 [ext_resource type="Texture2D" uid="uid://n7kvtcdlhvi1" path="res://Tileset/modern interiors/Interiors_personalizado_32x32.png" id="2_k7go6"]
 [ext_resource type="Texture2D" uid="uid://ddvia0cmg1cm2" path="res://Tileset/modern interiors/Muebles AAAIMX.png" id="3_vy1cq"]
-[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/player_test.tscn" id="4_k7go6"]
-[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/area_2d.gd" id="5_vy1cq"]
+[ext_resource type="PackedScene" uid="uid://b5j1vywrcep3x" path="res://Escenas/PJ´s/player_test.tscn" id="4_k7go6"]
+[ext_resource type="Script" uid="uid://cggerve75eqt3" path="res://Scripts/F_puerta.gd" id="5_vy1cq"]
 [ext_resource type="PackedScene" uid="uid://bs08g6x6xxkiw" path="res://Escenas/reproductor_musica.tscn" id="6_ykd57"]
 [ext_resource type="AudioStream" uid="uid://dxptkdnqjoiu3" path="res://Assets/Audio/Cowboy Bebop - Chicken Bone but it's just the first bit - Lainie Evers.mp3" id="7_haowd"]
 
@@ -951,7 +951,7 @@ sources/0 = SubResource("TileSetAtlasSource_ri0tp")
 size = Vector2(20, 291)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vy1cq"]
-size = Vector2(209, 14)
+size = Vector2(259.5, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ri0tp"]
 size = Vector2(488, 65)
@@ -12322,7 +12322,7 @@ size = Vector2(27.25, 50)
 size = Vector2(13.625, 51)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_176km"]
-size = Vector2(73.75, 59.5)
+size = Vector2(73.75, 78.5)
 
 [node name="Node2D" type="Node2D" unique_id=1443925498]
 
@@ -12352,7 +12352,7 @@ position = Vector2(247, 17.5)
 shape = SubResource("RectangleShape2D_ri0tp")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="TileMap/TileMapLayer/StaticBody2D" unique_id=1863418973]
-position = Vector2(385, 267)
+position = Vector2(362, 267)
 shape = SubResource("RectangleShape2D_vy1cq")
 
 [node name="decoraciones" type="TileMapLayer" parent="TileMap" unique_id=125224902]
@@ -12418,15 +12418,15 @@ position = Vector2(283.1875, 151.5)
 shape = SubResource("RectangleShape2D_3nohe")
 
 [node name="player_test" parent="." unique_id=1898129713 instance=ExtResource("4_k7go6")]
-position = Vector2(212, 185)
+position = Vector2(245, 201)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2085676510]
 position = Vector2(152, 74)
 script = ExtResource("5_vy1cq")
-next_scene_path = "res://zona_exterior.tscn"
+next_scene_path = "res://Escenas/zona_exterior.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=293189246]
-position = Vector2(92, 215.75)
+position = Vector2(94, 210)
 shape = SubResource("RectangleShape2D_176km")
 
 [node name="Reproductor_Musica" parent="." unique_id=258453023 instance=ExtResource("6_ykd57")]
