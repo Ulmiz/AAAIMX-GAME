@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://chplphatu4o5q"]
+
+[ext_resource type="Script" uid="uid://biuohho3c41ue" path="res://puerta.gd" id="1_ylh6m"]
+[ext_resource type="Resource" uid="uid://vw3h3fcwj5r1" path="res://Dialogo/Puerta.dialogue" id="2_ylh6m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_imcla"]
+size = Vector2(68, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xed38"]
+size = Vector2(69, 44)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rbcj5"]
+radius = 13.0
+
+[node name="CollisionShape2D2" type="CharacterBody2D" unique_id=2103544510]
+script = ExtResource("1_ylh6m")
+dialogue_resource = ExtResource("2_ylh6m")
+
+[node name="CharacterBody2D" type="CollisionShape2D" parent="." unique_id=1285693225]
+position = Vector2(289, -3)
+shape = SubResource("RectangleShape2D_imcla")
+
+[node name="StaticBody2D" type="CollisionShape2D" parent="." unique_id=1559891612]
+position = Vector2(289.5, -2)
+shape = SubResource("RectangleShape2D_xed38")
+
+[node name="label_aviso" type="Label" parent="." unique_id=1665106424]
+offset_left = 286.0
+offset_top = -43.0
+offset_right = 326.0
+offset_bottom = -20.0
+text = "E"
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=911650635]
+position = Vector2(262, -29)
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=703437465]
+position = Vector2(27, 28)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_rbcj5")

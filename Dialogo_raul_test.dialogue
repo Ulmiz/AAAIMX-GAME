@@ -1,0 +1,9 @@
+~ start
+Raul: Hola bienvenido al departamento de software
+Raul: Te gustaria saber mas acerca de lo que hacemos
+- SI
+	Raul: Bueno dejame te explico aqui nosotros somos responsables de desarrollar, implementar, mantener y actualizar las aplicaciones y programas que impulsan la productividad de una organización.
+- No
+	Player: Estoy bien por el momento gracias
+
+=> END

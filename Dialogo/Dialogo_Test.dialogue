@@ -1,9 +1,9 @@
 ~ start
 player: Hola me gusta el [wave]capitulo[/wave]
-Agente 01: [wave]Hola bienvenido[/wave]
-Agente 01: Te gustaria saber que significa AAAIMX
+Angel: [wave]Hola bienvenido[/wave] soy el lider del capitulo
+Angel: Te gustaria saber que significa AAAIMX
 - si
-	Agente 01: AAAIMX significa Asociación por el Avance de la Inteligencia Artificial en México...
-	Agente 01: ...por sus siglas adaptadas del inglés, Association for the Advancement of Artificial Intelligence Student Chapter Mexico.
+	Angel: AAAIMX significa Asociación por el Avance de la Inteligencia Artificial en México...
+	Angel: ...por sus siglas adaptadas del inglés, Association for the Advancement of Artificial Intelligence Student Chapter Mexico.
 - no
-	Agente 01: Bueno aqui estare por si quieres saber (jeje)
+	Angel: Sale bro bueno aqui estare por si quieres saber 

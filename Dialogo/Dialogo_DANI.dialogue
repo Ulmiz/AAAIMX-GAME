@@ -1,0 +1,15 @@
+~ start
+Dani: Hola como estas bievenido a la division de IA.
+player: ¿Que es lo que eres? o ¿Quien eres?
+Dani: ¿yo? hace mucho que no se que es lo que soy....
+Dani: Mi nombre es dani fui alguna vez lider de la division
+Dani: Fui uno de los mejores investigadores al sur del pais
+Dani: Sin embargo cuando decidi irme del capitulo la division entro en una crisis
+Dani: Me querian devuelta pero yo ya estaba en otras cosas 
+Dani: Siendo asi que me propusieron conectar mi cerebro a la red asi podia encargarme de la division y de mis proyectoss
+Dani: Y aqui estamos
+Dani: ¿Te gustaria entrar a un proyecto de muerdago?
+- No
+	Player: No gracias estoy bien asi.
+- Dejame lo pienso
+	Player: Dame chance para tomar una desicion.

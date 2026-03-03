@@ -2,13 +2,13 @@ extends CharacterBody2D
 
 @export var dialogue_resource: DialogueResource 
 @export var dialogue_start: String = "start"      
-
+@onready var cerebelo = $cerebelo
 const BALLOON_SCENE = preload("res://Dialogo/balloon.tscn")
 @onready var label_aviso = $label_aviso
 
 func _ready():
 	label_aviso.hide()
-	
+	cerebelo.play("default")
 func hablar():
 	if dialogue_resource:
 		
@@ -22,4 +22,3 @@ func hablar():
 
 func _terminar_dialogo():
 	Global.hablando = false
-	

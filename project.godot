@@ -100,7 +100,7 @@ Right={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogo/Dialogo_Test.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogo/Dialogo_Test.dialogue", "res://Dialogo_raul_test.dialogue", "res://Dialogo/Dialogo_raul_test.dialogue", "res://Dialogo/Dialogo_DANI.dialogue", "res://Mei_test.dialogue", "res://Dialogo/Puerta.dialogue", "res://Dialogo/Npc.dialogue")
 
 [physics]
 

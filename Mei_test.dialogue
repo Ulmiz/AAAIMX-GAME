@@ -1,0 +1,10 @@
+~ start
+Mei: Que onda bro
+Mei: Te gustaria entrar a la robot rage.
+- Si
+	Player: Va.
+	Mei: Chido 
+- No
+	Player: No gracias
+	Mei: como quieras bro solamente alejate de mi por fa gracias
+=> END

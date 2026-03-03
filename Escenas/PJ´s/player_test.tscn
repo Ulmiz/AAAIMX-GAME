@@ -11,7 +11,7 @@
 size = Vector2(16, 5.375)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lwnxd"]
-radius = 9.013878
+radius = 10.5
 
 [node name="player_test" type="CharacterBody2D" unique_id=1898129713]
 script = ExtResource("1_lwnxd")
@@ -57,6 +57,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("6_txb0p")
 
 [node name="LabelNombre" type="Label" parent="Visuals" unique_id=417678572]
+y_sort_enabled = true
 offset_left = -25.0
 offset_top = -35.0
 offset_right = 23.0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://pssqoll1o60a"
+path="res://.godot/imported/Dialogo_DANI.dialogue-35069f90d81814cc22079eb9a810ca94.tres"
+
+[deps]
+
+source_file="res://Dialogo/Dialogo_DANI.dialogue"
+dest_files=["res://.godot/imported/Dialogo_DANI.dialogue-35069f90d81814cc22079eb9a810ca94.tres"]
+
+[params]
+
+defaults=true

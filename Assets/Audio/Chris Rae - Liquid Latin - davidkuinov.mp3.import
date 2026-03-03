@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://i85gwy5t0k85"
+path="res://.godot/imported/Chris Rae - Liquid Latin - davidkuinov.mp3-2562d40bb5de5cf49c43bc482d6a0861.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Chris Rae - Liquid Latin - davidkuinov.mp3"
+dest_files=["res://.godot/imported/Chris Rae - Liquid Latin - davidkuinov.mp3-2562d40bb5de5cf49c43bc482d6a0861.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

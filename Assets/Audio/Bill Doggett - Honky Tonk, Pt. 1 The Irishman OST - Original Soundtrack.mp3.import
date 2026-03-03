@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://on6uhpc6ghiv"
+path="res://.godot/imported/Bill Doggett - Honky Tonk, Pt. 1 The Irishman OST - Original Soundtrack.mp3-aebecc213730671893bfe0077688cc66.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Bill Doggett - Honky Tonk, Pt. 1 The Irishman OST - Original Soundtrack.mp3"
+dest_files=["res://.godot/imported/Bill Doggett - Honky Tonk, Pt. 1 The Irishman OST - Original Soundtrack.mp3-aebecc213730671893bfe0077688cc66.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

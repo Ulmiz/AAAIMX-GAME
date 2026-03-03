@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b5wte0pvg4som" path="res://Scripts/npc.gd" id="1_u58t6"]
 [ext_resource type="Resource" uid="uid://d3yo7r26f4ncm" path="res://Dialogo/Dialogo_Test.dialogue" id="2_7qj7g"]
-[ext_resource type="Texture2D" uid="uid://b5cxjfnwkhpkd" path="res://Assets/character.png" id="2_gvjmg"]
+[ext_resource type="Texture2D" uid="uid://bh72ij40gfyav" path="res://Assets/characterAngel.png" id="3_wc3hf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6an2"]
 size = Vector2(18, 18)
@@ -17,7 +17,7 @@ dialogue_resource = ExtResource("2_7qj7g")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1683730457]
 position = Vector2(27, 24)
 scale = Vector2(2, 2)
-texture = ExtResource("2_gvjmg")
+texture = ExtResource("3_wc3hf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=232803388]
 position = Vector2(27, 24)

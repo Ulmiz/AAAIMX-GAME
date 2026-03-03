@@ -104,6 +104,8 @@ func _on_button_5_pressed() -> void:
 	mostrar_ano(2026)
 
 func _on_cerrar_pressed(): 
+	var cancion_lobby = load("res://Assets/Audio/Hylics 2 OST Xeno Arcadia - Mason Lindroth.mp3")
+	GestorMusica.cambiar_musica(cancion_lobby)
 	# Ocultar la pantalla (esto activará visibility_changed)
 	hide() 
 	get_tree().paused = false

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://vw3h3fcwj5r1"
+path="res://.godot/imported/Puerta.dialogue-9102de056d7f52dff8d98226707a693e.tres"
+
+[deps]
+
+source_file="res://Dialogo/Puerta.dialogue"
+dest_files=["res://.godot/imported/Puerta.dialogue-9102de056d7f52dff8d98226707a693e.tres"]
+
+[params]
+
+defaults=true

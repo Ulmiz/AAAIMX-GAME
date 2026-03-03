@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dokkd31efgjop"]
+
+[ext_resource type="Script" uid="uid://cl43bifcc78l5" path="res://Scripts/DANY.gd" id="1_cm67d"]
+[ext_resource type="Resource" uid="uid://pssqoll1o60a" path="res://Dialogo/Dialogo_DANI.dialogue" id="2_r6y1c"]
+[ext_resource type="Texture2D" uid="uid://dasxwun4te42e" path="res://Tileset/recursos/cerebelo-Sheet.png" id="3_r6y1c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyd0r"]
+atlas = ExtResource("3_r6y1c")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8tg4"]
+atlas = ExtResource("3_r6y1c")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1pve"]
+atlas = ExtResource("3_r6y1c")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgl7k"]
+atlas = ExtResource("3_r6y1c")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w4jh1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyd0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8tg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1pve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgl7k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpht0"]
+size = Vector2(86.46155, 56.838715)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gvjmg"]
+radius = 67.02985
+
+[node name="Npc" type="CharacterBody2D" unique_id=125718690]
+script = ExtResource("1_cm67d")
+dialogue_resource = ExtResource("2_r6y1c")
+
+[node name="cerebelo" type="AnimatedSprite2D" parent="." unique_id=507957313]
+position = Vector2(225.99991, 128)
+scale = Vector2(2.237, 2)
+sprite_frames = SubResource("SpriteFrames_w4jh1")
+frame_progress = 0.1888542
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1482048955]
+position = Vector2(233.5, 170.16129)
+scale = Vector2(2.237, 2)
+shape = SubResource("RectangleShape2D_rpht0")
+
+[node name="label_aviso" type="Label" parent="." unique_id=923268947]
+offset_left = 211.0
+offset_top = 5.0
+offset_right = 251.0
+offset_bottom = 28.0
+text = "E"
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1398561164]
+position = Vector2(185, 127)
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1535159699]
+position = Vector2(42, 5)
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_gvjmg")

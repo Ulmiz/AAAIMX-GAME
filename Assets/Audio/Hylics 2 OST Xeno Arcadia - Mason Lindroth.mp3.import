@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eslpicw433l8"
+path="res://.godot/imported/Hylics 2 OST Xeno Arcadia - Mason Lindroth.mp3-96c36778abf75e5dc66eb9dff48662de.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Hylics 2 OST Xeno Arcadia - Mason Lindroth.mp3"
+dest_files=["res://.godot/imported/Hylics 2 OST Xeno Arcadia - Mason Lindroth.mp3-96c36778abf75e5dc66eb9dff48662de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

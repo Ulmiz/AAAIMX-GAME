@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bndbgk4kj06fx"
+path="res://.godot/imported/Cowboy Bebop - Chicken Bone but its just the first bit - Lainie Evers.mp3-ba5a6f1c9b6ba3f51c606812196a158a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Cowboy Bebop - Chicken Bone but its just the first bit - Lainie Evers.mp3"
+dest_files=["res://.godot/imported/Cowboy Bebop - Chicken Bone but its just the first bit - Lainie Evers.mp3-ba5a6f1c9b6ba3f51c606812196a158a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
